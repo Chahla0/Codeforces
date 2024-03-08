@@ -1,3 +1,5 @@
+// i'm chahla ;
+//this my code of problem Beautiful Year in codeforces;
 #include <iostream>
 using namespace std;
 
@@ -12,7 +14,7 @@ int main() {
         int d = n / 1000;
         if (a != b && a != c && a != d && b != c && b != d && c != d) {
             cout << n;
-            break; // Added break to exit the loop once a number with no repeated digits is found
+            break; 
         }
     }
     return 0;
