@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n; 
+    cin >> n;
+    while (true) {
+        n = n + 1;
+        int a = n % 10;
+        int b = (n / 10) % 10;
+        int c = (n / 100) % 10;
+        int d = n / 1000;
+        if (a != b && a != c && a != d && b != c && b != d && c != d) {
+            cout << n;
+            break; // Added break to exit the loop once a number with no repeated digits is found
+        }
+    }
+    return 0;
+}
